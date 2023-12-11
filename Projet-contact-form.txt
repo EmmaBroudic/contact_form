@@ -1,0 +1,5 @@
+-> mettre en place l'environnement de travail docker
+-> mettre en place l'environnement de travail nodeJS
+-> faire une maquette (papier) de deux pages (accueil et formulaire)
+-> faire une base de données
+-> écrire un README.md
