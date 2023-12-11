@@ -13,10 +13,9 @@ https://www.sfeir.dev/back/dockeriser-une-application-nodejs-pas-a-pas/
 // Ajouter les éléments nécessaires dans la partie Script
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node server.ts",
+    "start": "node dist/server.js",
     "dev": "nodemon server.ts",
-    "build": "tsc",
-    "lint": "eslint src --fix"
+    "build": "tsc"
   },
 
 // Installer TypeScript express node
