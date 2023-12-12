@@ -5,10 +5,10 @@ https://www.sfeir.dev/back/dockeriser-une-application-nodejs-pas-a-pas/
 > npm init -y
 
 // Construire l'image Docker
-> docker build -t contact_form .
+> 1. docker build -t contact_form .
 
 // Vérifier que l'image Docker a bien été construire
-> docker images
+> 2. docker images
 
 // Ajouter les éléments nécessaires dans la partie Script
   "scripts": {
@@ -35,7 +35,18 @@ https://www.sfeir.dev/back/dockeriser-une-application-nodejs-pas-a-pas/
 > npm install pug
 
 // Compose-up docker
-> docker-compose up
+> 3. docker-compose up
 
 // Forcer le rebuild
-> docker-compose up --force-recreate --build
+> 4. sdocker-compose up --force-recreate --build
+
+// Postgreclient
+Url : http://localhost:8080/
+Sélectionner "server" -> cliquer droit -> nouveau -> server
+Compléter onglet Général ->
+> Nom : contactform
+Compléter onglet Connexion ->
+> Nom d'hôte : postgresdb
+> Port : 5432
+> Nom utilisateur : adminuser
+> Mot de passe : adminpassword
