@@ -1,0 +1,21 @@
+doctype html
+
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        title Form
+        block styles
+            link(rel="stylesheet", type='text/css', href="form.css")
+    body
+        header
+            h1 Hello everyone!
+            h2 Peux-tu compléter ce formulaire ?
+
+            form(action="", method="post") 
+                label(for="Firstname") Prénom
+                input(type="text")
+                label(for="Surname") Nom
+                input(type="text")
+                label(for="email") Email
+                input(type="email", name="")
+                input.submit(type='submit')

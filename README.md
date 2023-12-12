@@ -31,6 +31,9 @@ https://www.sfeir.dev/back/dockeriser-une-application-nodejs-pas-a-pas/
 // Builder TypeScript
 > npm run build
 
+// Installer pug
+> npm install pug
+
 // Compose-up docker
 > docker-compose up
 
