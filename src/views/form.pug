@@ -12,6 +12,14 @@ html(lang="en")
             h2 Could you complete this form?
 
             form(action="/form", method="post")
+                label(for="User_Firstname") Firstname
+                input(type="text", name="User_Firstname")
+                label(for="User_Surname") Firstname
+                input(type="text", name="User_Surname")
+                label(for="User_Email") Email
+                input(type="text", name="User_Email")
+                label(for="Message_Title") Object
+                input(type="text", name="Message_Title")
                 label(for="Message_Text") Text
                 input(type="text", name="Message_Text")
 

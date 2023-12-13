@@ -55,17 +55,21 @@ app.post('/form', async (req, res) => {
 
     // Données du formulaire
     //const messageTitle = req.body.Message_Title;
+    const userFirstname = req.body.User_Firstname;
+    const userSurname = req.body.User_Surname;
+    const userEmail = req.body.User_Email;
+    const messageTitle = req.body.Message_Title;
     const messageText = req.body.Message_Text;
 
     console.log("test 1 : " + messageText);
 
     // Requête SQL pour insérer les données dans la table
-    const insertQuery = `INSERT INTO message (Message_Text)
-                         VALUES ($1)`;
+    const insertQuery = `INSERT INTO message (User_Firstname, User_Surname, User_Email, Message_Title, Message_Text)
+                         VALUES ($1, $2, $3, $4, $5)`;
 
     console.log("Test 2 : " + insertQuery);
     // Paramètres à passer à la requête
-    const values = [messageText];
+    const values = [userFirstname, userSurname, userEmail, messageTitle, messageText];
 
     console.log("Test 3 : " + values);
     // Exécution de la requête d'insertion
