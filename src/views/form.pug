@@ -11,12 +11,8 @@ html(lang="en")
             h1 Hello everyone!
             h2 Could you complete this form?
 
-            form(action="", method="post") 
-
+            form(action="/form", method="post")
                 label(for="Message_Text") Text
-                input(type="text")
-                //label(for="Message_Title") Object
-                //input(type="text")
-                //label(for="User_Id") User_Id
-                //input(type="int", name="")
+                input(type="text", name="Message_Text")
+
                 input.submit(type='submit')

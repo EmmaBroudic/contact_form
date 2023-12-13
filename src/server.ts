@@ -57,13 +57,17 @@ app.post('/form', async (req, res) => {
     //const messageTitle = req.body.Message_Title;
     const messageText = req.body.Message_Text;
 
+    console.log("test 1 : " + messageText);
+
     // Requête SQL pour insérer les données dans la table
     const insertQuery = `INSERT INTO message (Message_Text)
                          VALUES ($1)`;
 
+    console.log("Test 2 : " + insertQuery);
     // Paramètres à passer à la requête
     const values = [messageText];
 
+    console.log("Test 3 : " + values);
     // Exécution de la requête d'insertion
     await client.query(insertQuery, values);
 
