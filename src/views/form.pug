@@ -9,13 +9,14 @@ html(lang="en")
     body
         header
             h1 Hello everyone!
-            h2 Peux-tu compléter ce formulaire ?
+            h2 Could you complete this form?
 
             form(action="", method="post") 
-                label(for="Firstname") Prénom
+
+                label(for="Message_Text") Text
                 input(type="text")
-                label(for="Surname") Nom
-                input(type="text")
-                label(for="email") Email
-                input(type="email", name="")
+                //label(for="Message_Title") Object
+                //input(type="text")
+                //label(for="User_Id") User_Id
+                //input(type="int", name="")
                 input.submit(type='submit')

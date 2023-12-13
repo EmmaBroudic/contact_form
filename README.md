@@ -48,5 +48,9 @@ Compléter onglet Général ->
 Compléter onglet Connexion ->
 > Nom d'hôte : postgresdb
 > Port : 5432
+> Base de données : mydatabase
 > Nom utilisateur : adminuser
 > Mot de passe : adminpassword
+
+// Faire des requêtes dans le postgres client
+> Outils -> éditeur de requêtes
