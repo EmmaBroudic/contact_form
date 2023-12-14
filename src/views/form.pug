@@ -9,18 +9,19 @@ html(lang="en")
     body
         header
             h1 Hello everyone!
-            h2 Could you complete this form?
 
+        main
+            h2 Could you complete this form?
             form(action="/form", method="post")
                 label(for="User_Firstname") Firstname
                 input(type="text", name="User_Firstname")
-                label(for="User_Surname") Firstname
+                label(for="User_Surname") Surname
                 input(type="text", name="User_Surname")
                 label(for="User_Email") Email
                 input(type="text", name="User_Email")
                 label(for="Message_Title") Object
                 input(type="text", name="Message_Title")
                 label(for="Message_Text") Text
-                input(type="text", name="Message_Text")
+                input#text(type="text", name="Message_Text")
 
-                input.submit(type='submit')
+                input.submit#button(type='submit')

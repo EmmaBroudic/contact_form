@@ -1,5 +1,35 @@
-h1, h2 {
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('Montserrat-Bold.ttf') format('truetype');
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+header {
+    border-bottom: #FF6060 solid 3px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+h1 {
     text-align: center;
+    font-family: MontserratBold;
+}
+
+h2 {
+    text-align: center;
+    font-family: MontserratLight;
+    font-size: 12pt;
 }
 
 form {
@@ -11,11 +41,28 @@ form {
 
 label {
     font-weight: bold;
+    font-family: MontserratLight;
+    font-size: 10pt;
     margin-top: 10px;
 }
 
 input {
+    font-family: MontserratLight;
     width: 40%;
     height: 25px;
     margin: 5px;
+    border-radius: 10px;
+    border: #FF6060 solid 1px;
+    width: 400px;
+    height: 50px;
+}
+
+#button {
+    background-color: #FF6060;
+    color: white;
+    margin-top: 30px;
+}
+
+#text {
+    height: 150px;
 }

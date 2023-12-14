@@ -1,0 +1,37 @@
+@font-face {
+font-family: 'MontserratLight';
+src: url('Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'MontserratBold';
+src: url('Montserrat-Bold.ttf') format('truetype');
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+header, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    border-bottom: #FF6060 solid 3px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: 'MontserratBold';
+}
+
+main {
+    font-family: 'MontserratLight';
+}
