@@ -26,11 +26,11 @@ app.set('view engine', 'pug');
 app.use(express.static(path.resolve(process.cwd(), 'src', 'styles')));
 
 
-app.get('/', (req: Request, res: Response) => {
+/*app.get('/', (req: Request, res: Response) => {
   res.send('Bienvenue sur mon serveur TypeScript !');
-});
+});*/
 
-app.get('/home', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   // Utilisez le nom du fichier Pug sans extension
   res.render('home', { pageTitle: 'Home' });
 });
