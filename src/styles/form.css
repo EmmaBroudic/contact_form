@@ -17,13 +17,23 @@ header {
     border-bottom: #FF6060 solid 3px;
 }
 
-main {
-    margin-top: 40px;
-}
-
 h1 {
     text-align: center;
     font-family: MontserratBold;
+}
+
+#button {
+    background-color: #FF6060;
+    color: white;
+    margin-top: 30px;
+}
+
+#text {
+    height: 150px;
+}
+
+main {
+    margin-top: 40px;
 }
 
 h2 {
@@ -37,6 +47,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 label {
@@ -46,23 +57,29 @@ label {
     margin-top: 10px;
 }
 
-input {
-    font-family: MontserratLight;
-    width: 40%;
-    height: 25px;
-    margin: 5px;
-    border-radius: 10px;
-    border: #FF6060 solid 1px;
-    width: 400px;
-    height: 50px;
+@media screen and (min-width: 992px) {
+    
+    input {
+        font-family: MontserratLight;
+        height: 25px;
+        margin: 5px;
+        border-radius: 10px;
+        border: #FF6060 solid 1px;
+        width: 800px;
+        height: 50px;
+    }
 }
 
-#button {
-    background-color: #FF6060;
-    color: white;
-    margin-top: 30px;
-}
 
-#text {
-    height: 150px;
+@media screen and (max-width: 991px) {
+
+    input {
+        font-family: MontserratLight;
+        height: 25px;
+        margin: 5px;
+        border-radius: 10px;
+        border: #FF6060 solid 1px;
+        width: 400px;
+        height: 50px;
+    }
 }
